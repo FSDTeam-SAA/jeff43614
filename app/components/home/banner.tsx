@@ -32,7 +32,7 @@ export default function HomeBanner() {
   }, [activeIndex]);
 
   return (
-    <section className="relative h-[92vh] min-h-150 w-full overflow-hidden bg-black">
+    <section className="relative h-[80vh] min-h-150 w-full overflow-hidden bg-black">
       {/* 1. BACKGROUND CAROUSEL LAYER */}
       <AnimatePresence mode="popLayout">
         <motion.div
@@ -110,9 +110,8 @@ export default function HomeBanner() {
         </motion.div>
       </div>
 
-      {/* 3. BOTTOM PREVIEW WIDGET LAYER */}
       {/* Adjusted position to md:bottom-20 to sit above the angled divider */}
-      <div className="absolute md:bottom-32 md:right-8 bottom-20 right-1/2 translate-x-1/2 md:translate-x-0 z-40 p-3 bg-black/40 backdrop-blur-sm rounded-xl border border-white/10">
+      <div className="absolute md:bottom-24 md:right-2 bottom-12 right-1/2 translate-x-1/2 md:translate-x-0 z-40 p-3 bg-black/40 backdrop-blur-sm rounded-xl border border-white/10">
         <div className="flex items-center gap-3">
           {bgImages.map((img, index) => {
             const isActive = index === activeIndex;
@@ -144,7 +143,7 @@ export default function HomeBanner() {
 
       {/* Skews UP towards the right side to match reference image */}
       <div
-        className="absolute z-30 -bottom-24 -right-5 md:-right-10 w-[110%] h-48 bg-white rotate-3 origin-bottom-right shadow-[0_-10px_40px_rgba(0,0,0,0.1)] md:block"
+        className="absolute z-30 -bottom-32 -right-5 md:-right-10 w-[110%] h-48 bg-white rotate-3 origin-bottom-right shadow-[0_-10px_40px_rgba(0,0,0,0.1)] md:block"
         aria-hidden="true"
       ></div>
     </section>
