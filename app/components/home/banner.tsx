@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react"; // Added useEffect
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence, easeInOut } from "framer-motion";
@@ -28,7 +28,6 @@ export default function HomeBanner() {
       );
     }, 4000); // 4 seconds
 
-    // Cleanup interval on unmount or when activeIndex changes
     return () => clearInterval(interval);
   }, [activeIndex]);
 
@@ -69,7 +68,7 @@ export default function HomeBanner() {
             <span className="block text-primary">Line Striping Experts</span>
           </h1>
 
-          <p className="text-lg md:text-2xl text-gray-200 font-medium leading-relaxed">
+          <p className="text-lg md:text-2xl text-gray-200 font-medium leading-relaxed font-poppins">
             &quot;Exceptional Service with a Commitment to Your
             Satisfaction!&quot;
             <br className="hidden md:block" /> Parking Lot Striping Services.
@@ -82,7 +81,9 @@ export default function HomeBanner() {
             >
               Schedule
             </Link>
-            <div className="translate-y-28 flex flex-col items-center gap-2">
+
+            {/* Scroll Indicator */}
+            <div className="translate-y-12 flex flex-col items-center gap-2">
               <motion.span
                 className="text-sm uppercase tracking-widest text-gray-300"
                 initial={{ opacity: 0 }}
@@ -109,8 +110,9 @@ export default function HomeBanner() {
         </motion.div>
       </div>
 
-      {/* 3. BOTTOM RIGHT PREVIEW WIDGET LAYER */}
-      <div className="absolute md:bottom-8 md:right-2 bottom-4 right-1/2 translate-x-1/2 md:translate-x-0 z-20 p-3 bg-black/40 backdrop-blur-sm rounded-xl border border-white/10">
+      {/* 3. BOTTOM PREVIEW WIDGET LAYER */}
+      {/* Adjusted position to md:bottom-20 to sit above the angled divider */}
+      <div className="absolute md:bottom-32 md:right-8 bottom-20 right-1/2 translate-x-1/2 md:translate-x-0 z-40 p-3 bg-black/40 backdrop-blur-sm rounded-xl border border-white/10">
         <div className="flex items-center gap-3">
           {bgImages.map((img, index) => {
             const isActive = index === activeIndex;
@@ -139,6 +141,12 @@ export default function HomeBanner() {
           })}
         </div>
       </div>
+
+      {/* Skews UP towards the right side to match reference image */}
+      <div
+        className="absolute z-30 -bottom-24 -right-5 md:-right-10 w-[110%] h-48 bg-white rotate-3 origin-bottom-right shadow-[0_-10px_40px_rgba(0,0,0,0.1)] md:block"
+        aria-hidden="true"
+      ></div>
     </section>
   );
 }
