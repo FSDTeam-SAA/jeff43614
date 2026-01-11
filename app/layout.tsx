@@ -1,6 +1,6 @@
 import { Montserrat_Alternates, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/shared/navbar";
+import Navbar from "../components/shared/navbar";
 
 const montSerrat = Montserrat_Alternates({
   subsets: ["latin"],

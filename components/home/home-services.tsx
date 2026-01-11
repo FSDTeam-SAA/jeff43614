@@ -6,6 +6,7 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import ServiceCard from "../shared/service-card";
 
 export default function ServiceHome() {
   // Taking the first 3 services
@@ -41,30 +42,12 @@ export default function ServiceHome() {
               className="group cursor-pointer"
             >
               {/* Image Container with Hover Zoom */}
-              <div className="relative w-full h-80 overflow-hidden rounded-2xl shadow-lg">
-                <Image
-                  fill
-                  src={service.image as string}
-                  alt={service.title}
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                {/* Overlay Number */}
-                <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md text-white w-10 h-10 flex items-center justify-center rounded-full font-bold border border-white/20">
-                  0{index + 1}
-                </div>
-                {/* Bottom Gradient */}
-                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-
-              {/* Content */}
-              <div className="mt-6 space-y-3">
-                <h3 className="title font-black text-black uppercase italic transition-colors group-hover:text-primary">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 font-poppins line-clamp-3 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
+              <ServiceCard
+                title={service.title}
+                description={service.description}
+                image={service.image as string}
+                index={index}
+              />
             </motion.div>
           ))}
         </div>
