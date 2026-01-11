@@ -45,17 +45,17 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 w-full bg-white border-b border-gray-200">
+      <nav className="fixed top-0 z-50 bg-white/20 backdrop-blur-md w-full border-b border-gray-200 py-2">
         <div className="container">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="relative z-10">
               <Image
-                src="/images/logo-3.png"
+                src="/images/logo.png"
                 alt="Logo"
                 width={200}
-                height={50}
-                className="w-auto h-12 object-contain"
+                height={100}
+                className="w-52 h-20 object-contain"
               />
             </Link>
 
@@ -66,11 +66,10 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className={`px-8 py-5 text-sm font-bold uppercase tracking-tight transition-all ${
-                      pathName === link.href
-                        ? "bg-primary text-black"
-                        : "hover:bg-gray-100 bg-black text-white hover:text-black"
-                    }`}
+                    className={`px-8 py-5 text-sm font-bold uppercase tracking-tight transition-all ${pathName === link.href
+                      ? "bg-primary text-black"
+                      : "hover:bg-gray-100 bg-black text-white hover:text-black"
+                      }`}
                   >
                     {link.name}
                   </Link>
@@ -81,7 +80,7 @@ export default function Navbar() {
             {/* Mobile Toggle */}
             <button
               onClick={() => setIsOpen(true)}
-              className="lg:hidden text-black"
+              className="lg:hidden text-primary"
               aria-label="Open Menu"
             >
               <Menu size={30} />
@@ -124,9 +123,8 @@ export default function Navbar() {
                   <motion.li key={link.name} variants={linkVariants}>
                     <Link
                       href={link.href}
-                      className={`text-4xl font-black uppercase italic ${
-                        pathName === link.href ? "text-[#facc15]" : "text-white"
-                      }`}
+                      className={`text-4xl font-black uppercase italic ${pathName === link.href ? "text-[#facc15]" : "text-white"
+                        }`}
                     >
                       {link.name}
                     </Link>

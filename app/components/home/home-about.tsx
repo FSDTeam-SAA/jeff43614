@@ -20,10 +20,10 @@ export default function HomeAboutSection() {
             className="flex-1 space-y-4 md:space-y-6"
           >
             <div className="space-y-2">
-              <h2 className="text-primary text-3xl md:text-5xl font-black uppercase italic leading-none">
+              <h2 className="text-primary headline font-black uppercase italic leading-none">
                 15+ YEARS
               </h2>
-              <h3 className="text-black text-3xl md:text-5xl font-black uppercase italic leading-none">
+              <h3 className="text-black headline font-black uppercase italic leading-none">
                 OF EXPERIENCE
               </h3>
             </div>
@@ -51,17 +51,17 @@ export default function HomeAboutSection() {
             </Link>
 
             {/* Testimonial Block */}
-            <div className="mt-12 p-6 border-l-4 border-primary bg-gray-50 rounded-r-lg italic">
+            <div className="mt-6 lg:mt-12 p-6 border-l-4 border-primary bg-gray-50 rounded-r-lg italic">
               <Quote
                 className="text-primary mb-2"
                 size={30}
                 fill="currentColor"
               />
-              <p className="text-gray-800 text-xl font-medium mb-4 font-poppins">
+              <p className="text-gray-800 text-base md:text-lg lg:text-xl font-medium mb-4 font-poppins">
                 &quot;Not only did they finish the job in a timely manner they
                 have incredible attention to all the details.&quot;
               </p>
-              <span className="text-black font-bold uppercase tracking-wider">
+              <span className="text-black font-bold uppercase tracking-wider text-base md:text-lg lg:text-xl">
                 — Anthony Harris
               </span>
             </div>

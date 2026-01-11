@@ -17,7 +17,7 @@ export default function ServiceHome() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-start justify-between mb-12 lg:mb-20 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-6xl font-black text-black uppercase italic leading-[0.9]">
+            <h2 className="headline font-black text-black uppercase italic leading-[0.9]">
               A Complete Suite <br />
               <span className="text-primary">of Services</span>
             </h2>
@@ -58,7 +58,7 @@ export default function ServiceHome() {
 
               {/* Content */}
               <div className="mt-6 space-y-3">
-                <h3 className="text-2xl lg:text-3xl font-black text-black uppercase italic transition-colors group-hover:text-primary">
+                <h3 className="title font-black text-black uppercase italic transition-colors group-hover:text-primary">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 font-poppins line-clamp-3 leading-relaxed">

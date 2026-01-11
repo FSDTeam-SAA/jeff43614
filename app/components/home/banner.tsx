@@ -32,7 +32,7 @@ export default function HomeBanner() {
   }, [activeIndex]);
 
   return (
-    <section className="relative h-[80vh] min-h-150 w-full overflow-hidden bg-black">
+    <section className="relative h-[95vh] min-h-150 w-full overflow-hidden bg-black">
       {/* 1. BACKGROUND CAROUSEL LAYER */}
       <AnimatePresence mode="popLayout">
         <motion.div
