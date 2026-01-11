@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import HomeBanner from "./components/home/banner";
 import HomeAboutSection from "./components/home/home-about";
+import ServiceHome from "./components/home/home-services";
 
 export const metaData: Metadata = {
   title: "Line It Up Striping | Home",
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       <HomeBanner />
       <HomeAboutSection />
+      <ServiceHome />
     </main>
   );
 }

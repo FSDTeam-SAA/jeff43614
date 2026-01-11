@@ -68,7 +68,7 @@ export default function Navbar() {
                     onClick={() => setIsOpen(false)}
                     className={`px-8 py-5 text-sm font-bold uppercase tracking-tight transition-all ${
                       pathName === link.href
-                        ? "bg-[#facc15] text-black"
+                        ? "bg-primary text-black"
                         : "hover:bg-gray-100 bg-black text-white hover:text-black"
                     }`}
                   >
