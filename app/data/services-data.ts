@@ -13,7 +13,7 @@ export const servicesData: Service[] = [
     title: "Word stenciling",
     description:
       "Typically NO PARKING or VISITORS but we can create any verbiage you need. These are more cost-effective and sightly than having metal signs and clearly communicate important parking lot information like designated spaces, restrictions, or directions; ultimately improving organization and safety in parking areas.",
-    image: "/images/services/word-stenciling.jpg",
+    image: "/images/services/word.jpeg",
   },
   {
     id: 2,

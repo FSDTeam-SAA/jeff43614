@@ -24,7 +24,7 @@ const features = [
 
 export default function FeaturesSection() {
     return (
-        <section className="py-24 lg:py-32 bg-slate-50 relative overflow-hidden">
+        <section className="py-16 lg:py-32 bg-slate-50 relative overflow-hidden">
             {/* Subtle Background Element */}
             <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-transparent via-primary/30 to-transparent" />
 

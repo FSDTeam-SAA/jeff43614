@@ -27,13 +27,14 @@ export default function ContactSection() {
       else setStatus("error");
     } catch (err) {
       setStatus("error");
+      console.error(err);
     }
   };
 
   return (
-    <section className="py-24 lg:py-32 bg-white">
+    <section className="py-16 lg:py-32 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* LEFT SIDE: INFO & MAP */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -53,7 +54,7 @@ export default function ContactSection() {
 
             <div className="space-y-6">
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 bg-slate-50 border border-gray-100 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-all">
+                <div className="w-14 h-14 bg-slate-50 border border-gray-100 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
                   <Phone size={24} />
                 </div>
                 <div>
@@ -62,7 +63,7 @@ export default function ContactSection() {
                   </p>
                   <a
                     href="tel:4193817083"
-                    className="text-sm md:text-base font-black text-black"
+                    className="text-sm md:text-base font-semibold text-black"
                   >
                     (419) 381-7083
                   </a>
@@ -70,7 +71,7 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 bg-slate-50 border border-gray-100 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-all">
+                <div className="w-14 h-14 bg-slate-50 border border-gray-100 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
                   <Mail size={24} />
                 </div>
                 <div>
@@ -79,7 +80,7 @@ export default function ContactSection() {
                   </p>
                   <a
                     href="mailto:workingbuckeye@yahoo.com"
-                    className="text-sm md:text-base font-black text-black"
+                    className="text-sm md:text-base font-semibold text-black"
                   >
                     workingbuckeye@yahoo.com
                   </a>
@@ -103,7 +104,7 @@ export default function ContactSection() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-gray-100"
+            className="bg-slate-50 p-6 md:p-12 rounded-[2.5rem] border border-gray-100"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -149,7 +150,7 @@ export default function ContactSection() {
               <button
                 disabled={status === "sending"}
                 type="submit"
-                className="w-full bg-black hover:bg-primary hover:text-black text-white font-black py-5 rounded-xl transition-all duration-300 uppercase tracking-[0.2em] flex items-center justify-center gap-3 disabled:opacity-50"
+                className="w-full cursor-pointer bg-primary hover:bg-black hover:text-white text-white font-black py-5 rounded-xl transition-all duration-300 uppercase tracking-[0.2em] flex items-center justify-center gap-3 disabled:opacity-50"
               >
                 {status === "sending"
                   ? "Sending..."
