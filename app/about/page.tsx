@@ -1,4 +1,5 @@
 import AboutHeritage from "@/components/about/about-heritage";
+import CompanyCommitment from "@/components/about/company-commitment";
 import QualityPromise from "@/components/about/quality-promise";
 import CommonBanner from "@/components/shared/common-banner";
 import { Metadata } from "next";
@@ -16,6 +17,7 @@ export default function AboutPage() {
       <CommonBanner title="About Us" />
       <AboutHeritage />
       <QualityPromise />
+      <CompanyCommitment />
     </main>
   );
 }
