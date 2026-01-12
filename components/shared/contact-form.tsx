@@ -11,9 +11,10 @@ export default function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
     setStatus("sending");
 
-    const formData = new FormData(e.currentTarget);
+    const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
     try {
@@ -23,12 +24,19 @@ export default function ContactSection() {
         headers: { "Content-Type": "application/json" },
       });
 
-      if (res.ok) setStatus("success");
-      else setStatus("error");
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+        // Return to idle after 3 seconds so they can see the success message
+        setTimeout(() => setStatus("idle"), 3000);
+      } else {
+        setStatus("error");
+      }
     } catch (err) {
       setStatus("error");
       console.error(err);
     }
+    // Removed setStatus("idle") from here to prevent the flicker
   };
 
   return (
@@ -150,7 +158,7 @@ export default function ContactSection() {
               <button
                 disabled={status === "sending"}
                 type="submit"
-                className="w-full cursor-pointer bg-primary hover:bg-black hover:text-white text-white font-black py-5 rounded-xl transition-all duration-300 uppercase tracking-[0.2em] flex items-center justify-center gap-3 disabled:opacity-50"
+                className="w-full bg-primary hover:bg-black hover:text-white text-white font-black py-5 rounded-xl transition-all duration-300 uppercase tracking-[0.2em] flex items-center justify-center gap-3 disabled:opacity-50"
               >
                 {status === "sending"
                   ? "Sending..."
