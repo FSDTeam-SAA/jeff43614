@@ -1,4 +1,5 @@
 import AboutHeritage from "@/components/about/about-heritage";
+import QualityPromise from "@/components/about/quality-promise";
 import CommonBanner from "@/components/shared/common-banner";
 import { Metadata } from "next";
 import React from "react";
@@ -14,6 +15,7 @@ export default function AboutPage() {
     <main>
       <CommonBanner title="About Us" />
       <AboutHeritage />
+      <QualityPromise />
     </main>
   );
 }
