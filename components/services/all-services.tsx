@@ -1,6 +1,6 @@
 "use client";
 
-import { servicesData } from "@/app/data/services-data";
+import { servicesData } from "@/data/services-data";
 import { motion } from "framer-motion";
 import ServiceCard from "../shared/service-card";
 

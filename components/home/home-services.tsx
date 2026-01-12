@@ -1,6 +1,6 @@
 "use client";
 
-import { servicesData } from "@/app/data/services-data";
+import { servicesData } from "@/data/services-data";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
