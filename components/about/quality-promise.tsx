@@ -23,8 +23,8 @@ export default function QualityPromise() {
   ];
 
   return (
-    <section className="relative py-24 lg:py-32 bg-slate-50 overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="relative py-16 lg:py-32 bg-slate-50 overflow-hidden">
+      <div className="container relative z-10">
         <div className="max-w-5xl mx-auto text-center space-y-8">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

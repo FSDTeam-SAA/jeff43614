@@ -6,8 +6,8 @@ import { ShieldCheck, Award } from "lucide-react";
 
 export default function AboutHeritage() {
   return (
-    <section className="py-20 lg:py-32 bg-white overflow-hidden">
-      <div className="container mx-auto px-4">
+    <section className="py-16 lg:py-32 bg-white overflow-hidden">
+      <div className="container">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -73,7 +73,7 @@ export default function AboutHeritage() {
                 alt="Parking Lot Striping Process"
                 width={800}
                 height={600}
-                className="object-cover"
+                className="object-cover w-full aspect-4/3"
               />
             </div>
             {/* Decorative Element */}
