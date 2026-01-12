@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, Send } from "lucide-react";
 
-export default function ContactSection() {
+export default function ContactPage() {
   const [status, setStatus] = useState<
     "idle" | "sending" | "success" | "error"
   >("idle");
@@ -41,7 +41,7 @@ export default function ContactSection() {
 
   return (
     <section className="py-16 lg:py-32 bg-white">
-      <div className="container mx-auto px-4 mx-auto px-4 overflow-hidden">
+      <div className="container mx-auto px-4 overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* LEFT SIDE: INFO & MAP */}
           <motion.div

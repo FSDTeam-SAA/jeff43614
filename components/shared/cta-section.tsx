@@ -13,7 +13,7 @@ export default function CTASection() {
         <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_40px,rgba(0,0,0,1)_40px,rgba(0,0,0,1)_80px)]" />
       </div>
 
-      <div className="container mx-auto px-4 mx-auto px-4 relative z-10 text-center">
+      <div className="container mx-auto px-4 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
