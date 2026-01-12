@@ -1,3 +1,4 @@
+import AboutHeritage from "@/components/about/about-heritage";
 import CommonBanner from "@/components/shared/common-banner";
 import { Metadata } from "next";
 import React from "react";
@@ -12,6 +13,7 @@ export default function AboutPage() {
   return (
     <main>
       <CommonBanner title="About Us" />
+      <AboutHeritage />
     </main>
   );
 }
