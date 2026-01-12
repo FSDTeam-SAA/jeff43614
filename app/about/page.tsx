@@ -2,6 +2,7 @@ import AboutHeritage from "@/components/about/about-heritage";
 import CompanyCommitment from "@/components/about/company-commitment";
 import QualityPromise from "@/components/about/quality-promise";
 import CommonBanner from "@/components/shared/common-banner";
+import CTASection from "@/components/shared/cta-section";
 import { Metadata } from "next";
 import React from "react";
 
@@ -18,6 +19,7 @@ export default function AboutPage() {
       <AboutHeritage />
       <QualityPromise />
       <CompanyCommitment />
+      <CTASection />
     </main>
   );
 }
