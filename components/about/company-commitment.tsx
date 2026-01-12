@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function CompanyCommitment() {
   return (
     <section className="relative py-16 lg:py-32 bg-white overflow-hidden">
-      <div className="container">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           {/* Visual Side */}
           <motion.div

@@ -7,7 +7,7 @@ import { ShieldCheck, Award } from "lucide-react";
 export default function AboutHeritage() {
   return (
     <section className="py-16 lg:py-32 bg-white overflow-hidden">
-      <div className="container">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <motion.div
             initial={{ opacity: 0, x: -50 }}

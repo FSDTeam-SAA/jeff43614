@@ -55,7 +55,7 @@ export default function HomeBanner() {
       </AnimatePresence>
 
       {/* 2. STATIC CENTERED CONTENT LAYER */}
-      <div className="relative z-10 container mx-auto h-full flex flex-col items-center justify-center px-4 text-center">
+      <div className="relative z-10 container mx-auto px-4 h-full flex flex-col items-center justify-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

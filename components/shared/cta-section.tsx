@@ -7,18 +7,18 @@ import { ArrowRight, PhoneCall } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="relative py-8 lg:py-20 bg-primary overflow-hidden">
+    <section className="relative py-12 lg:py-20 bg-primary overflow-hidden">
       {/* Background Decorative Pattern (Subtle Stripes) */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_40px,rgba(0,0,0,1)_40px,rgba(0,0,0,1)_80px)]" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 text-center">
+      <div className="container mx-auto px-4 mx-auto px-4 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto space-y-8"
+          className="max-w-4xl mx-auto space-y-4"
         >
           <h2 className="headline font-black text-black uppercase italic leading-none tracking-tighter">
             Ready to <span className="text-white">Line It Up?</span>
@@ -30,7 +30,7 @@ export default function CTASection() {
             estimate today.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 pt-2">
             {/* Main Contact Button */}
             <Link href="/contact" className="w-full sm:w-auto">
               <motion.button

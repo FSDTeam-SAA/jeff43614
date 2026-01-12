@@ -123,7 +123,7 @@ export default function Footer() {
               </div>
             </div>
           </motion.div>
-
+ 
           {/* 4. HOURS OF OPERATION */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

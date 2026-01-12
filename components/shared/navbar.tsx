@@ -19,6 +19,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathName = usePathname();
 
+  // Close menu on navigation
   // Lock scroll when menu is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "unset";
@@ -44,7 +45,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 z-50 bg-white/20 backdrop-blur-md w-full border-b border-gray-100 py-2">
+      <nav className="fixed top-0 z-50 bg-white/20 backdrop-blur-md w-full border-b border-gray-200 py-2">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -54,30 +55,24 @@ export default function Navbar() {
                 alt="Logo"
                 width={200}
                 height={100}
-                className="w-28 h-12 md:w-32 md:h-14 lg:w-44 lg:h-16 object-contain"
+                className="w-28 h-12 md:w-32 md:h-14 lg:w-52 lg:h-20 object-contain"
               />
             </Link>
 
-            {/* Desktop Links - Now Minimalist */}
-            <ul className="hidden lg:flex items-center gap-2">
+            {/* Desktop Links */}
+            <ul className="hidden lg:flex items-center">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className={`px-6 py-2 text-xs font-black uppercase tracking-[0.2em] italic transition-all relative group ${
+                    onClick={() => setIsOpen(false)}
+                    className={`px-8 py-5 text-sm font-bold uppercase tracking-tight transition-all ${
                       pathName === link.href
-                        ? "text-black"
-                        : "text-gray-400 hover:text-black"
+                        ? "bg-primary text-black"
+                        : "hover:bg-gray-100 bg-black text-white hover:text-black"
                     }`}
                   >
                     {link.name}
-                    {/* Minimal Active Indicator (Yellow Dot) */}
-                    {pathName === link.href && (
-                      <motion.div
-                        layoutId="navUnderline"
-                        className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full"
-                      />
-                    )}
                   </Link>
                 </li>
               ))}
@@ -86,10 +81,10 @@ export default function Navbar() {
             {/* Mobile Toggle */}
             <button
               onClick={() => setIsOpen(true)}
-              className="lg:hidden text-primary p-2"
+              className="lg:hidden text-primary"
               aria-label="Open Menu"
             >
-              <Menu size={28} />
+              <Menu size={30} />
             </button>
           </div>
         </div>
@@ -105,8 +100,8 @@ export default function Navbar() {
             variants={menuVariants}
             className="fixed inset-0 z-60 bg-black flex flex-col"
           >
-            {/* Mobile Menu Header */}
-            <div className="flex items-center justify-between h-24 px-6">
+            {/* Mobile Menu Header - Keeps Logo and X at the top */}
+            <div className="flex items-center justify-between h-20 px-4 border-b border-white/10">
               <Image
                 src="/images/logo.png"
                 alt="Logo"
@@ -116,22 +111,22 @@ export default function Navbar() {
               />
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-2 text-primary"
+                className="p-2 text-white"
               >
-                <X size={32} />
+                <X size={35} />
               </button>
             </div>
 
-            {/* Mobile Menu Links */}
+            {/* Mobile Menu Links - Pushed below the header */}
             <div className="flex-1 flex flex-col justify-center items-center">
-              <ul className="flex flex-col items-center gap-8">
+              <ul className="flex flex-col items-center gap-6 -mt-20">
                 {navLinks.map((link) => (
                   <motion.li key={link.name} variants={linkVariants}>
                     <Link
                       href={link.href}
-                      onClick={() => setIsOpen(false)} // FIXED: Closes menu automatically
-                      className={`headline font-black uppercase italic tracking-tighter ${
-                        pathName === link.href ? "text-primary" : "text-white"
+                      onClick={() => setIsOpen(false)} // This ensures the menu closes on click
+                      className={`text-4xl font-black uppercase italic ${
+                        pathName === link.href ? "text-[#facc15]" : "text-white"
                       }`}
                     >
                       {link.name}
@@ -139,13 +134,6 @@ export default function Navbar() {
                   </motion.li>
                 ))}
               </ul>
-            </div>
-
-            {/* Minimal Footer for Mobile Menu */}
-            <div className="p-10 text-center">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
-                Line It Up Line Striping, LLC
-              </p>
             </div>
           </motion.div>
         )}
