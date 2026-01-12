@@ -10,7 +10,7 @@ interface CommonBannerProps {
 
 export default function CommonBanner({ title }: CommonBannerProps) {
   return (
-    <section className="relative h-[15vh] min-h-72 w-full overflow-hidden bg-black flex items-end justify-center">
+    <section className="relative h-62.5 md:h-[45vh] w-full overflow-hidden bg-black flex items-center justify-center clip-path-banner">
       {/* 1. Background Image with Dark Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -25,7 +25,7 @@ export default function CommonBanner({ title }: CommonBannerProps) {
       </div>
 
       {/* 2. Centered Content */}
-      <div className="relative z-10 container mx-auto text-center">
+      <div className="relative z-10 container mx-auto text-center lg:mt-20 mt-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

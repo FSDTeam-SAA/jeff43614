@@ -14,7 +14,7 @@ export default function ServiceHome() {
     <section className="py-16 lg:py-32 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-start justify-between mb-12 lg:mb-20 gap-6">
+        <div className="flex flex-col lg:flex-row md:items-start items-start justify-between mb-6 lg:mb-20 gap-5">
           <div className="max-w-2xl">
             <h2 className="headline font-black text-black uppercase italic leading-[0.9]">
               A Complete Suite <br />
@@ -22,14 +22,14 @@ export default function ServiceHome() {
             </h2>
             <div className="h-2 w-24 bg-primary mt-6"></div>
           </div>
-          <p className="text-gray-600 max-w-sm font-medium">
+          <p className="text-gray-600 max-w-sm font-medium md:place-self-end md:text-end">
             Professional precision for every project. We deliver high-quality
             striping solutions tailored to your specific facility needs.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
           {sortedServices.map((service, index) => (
             <motion.div
               key={service.id}
