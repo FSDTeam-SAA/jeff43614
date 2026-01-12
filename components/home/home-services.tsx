@@ -1,11 +1,9 @@
 "use client";
 
 import { servicesData } from "@/app/data/services-data";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import ServiceCard from "../shared/service-card";
 
 export default function ServiceHome() {

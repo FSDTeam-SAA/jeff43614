@@ -55,7 +55,7 @@ export default function Navbar() {
                 alt="Logo"
                 width={200}
                 height={100}
-                className="w-52 h-20 object-contain"
+                className="w-28 h-12 md:w-32 md:h-14 lg:w-52 lg:h-20 object-contain"
               />
             </Link>
 
