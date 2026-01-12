@@ -6,7 +6,7 @@ import ServiceCard from "../shared/service-card";
 
 export default function AllServices() {
   return (
-    <section className="py-16 lg:py-32 bg-white overflow-hidden">
+    <section className="lg:pt-16 lg:pb-24 pt-10 pb-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row md:items-start items-start justify-between mb-6 lg:mb-20 gap-5">

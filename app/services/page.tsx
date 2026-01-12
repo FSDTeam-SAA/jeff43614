@@ -1,5 +1,6 @@
 import AllServices from "@/components/services/all-services";
 import CommonBanner from "@/components/shared/common-banner";
+import CTASection from "@/components/shared/cta-section";
 import { Metadata } from "next";
 import React from "react";
 
@@ -14,6 +15,7 @@ export default function ServicePage() {
     <main>
       <CommonBanner title="Services" />
       <AllServices />
+      <CTASection />
     </main>
   );
 }
