@@ -107,7 +107,7 @@ export default function ContactPageContent() {
               <div className="w-full h-80 rounded-lg overflow-hidden border-8 border-slate-50 shadow-xl">
                 <iframe
                   title="Service Area Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1490.8718919420042!2d-83.6661957!3d41.6521501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883c790000000001%3A0x0!2zNDHCsDM5JzA3LjciTiA4M8KwMzknNTguMyJX!5e0!3m2!1sen!2sus!4v1715849000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.81712578287687!2d-83.63977167165899!3d41.608907310984186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883c79b41a2471d7%3A0x43fb8ebbc0a1608e!2s1643%20Park%20Forest%20Dr%2C%20Toledo%2C%20OH%2043614%2C%20USA!5e1!3m2!1sen!2sbd!4v1768330688287!5m2!1sen!2sbd"
                   className="w-full h-full border-0"
                   allowFullScreen
                   loading="lazy"

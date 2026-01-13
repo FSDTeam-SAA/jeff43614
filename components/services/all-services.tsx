@@ -40,7 +40,7 @@ export default function AllServices() {
                 description={service.description}
                 image={service.image as string}
                 index={index}
-                isFullDesc={true}
+                slug={service.slug as string}
               />
             </motion.div>
           ))}

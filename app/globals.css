@@ -132,7 +132,7 @@
     @apply text-3xl md:text-5xl;
   }
   .title {
-    @apply text-2xl lg:text-3xl;
+    @apply text-xl lg:text-2xl;
   }
   .clip-path-banner {
     clip-path: polygon(0 0, 100% 1%, 100% 99%, 0 84%);

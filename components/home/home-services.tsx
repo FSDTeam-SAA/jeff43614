@@ -45,6 +45,7 @@ export default function ServiceHome() {
                 description={service.description}
                 image={service.image as string}
                 index={index}
+                slug={service.slug as string}
               />
             </motion.div>
           ))}
