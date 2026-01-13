@@ -87,10 +87,10 @@ export default function ContactPage() {
                     Email Us
                   </p>
                   <a
-                    href="mailto:workingbuckeye@yahoo.com"
+                    href="mailto:workingbuckeye@gmail.com"
                     className="text-sm md:text-base font-semibold text-black"
                   >
-                    workingbuckeye@yahoo.com
+                    workingbuckeye@gmail.com
                   </a>
                 </div>
               </div>
