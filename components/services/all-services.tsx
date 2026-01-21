@@ -18,7 +18,10 @@ export default function AllServices() {
             <div className="h-2 w-24 bg-primary mt-6"></div>
           </div>
           <p className="text-gray-600 max-w-sm font-medium md:place-self-end md:text-end">
-            Professional precision for every project. We deliver high-quality
+            Professional precision for every project. From{" "}
+            <strong>Parking Stall Layout Design</strong> to{" "}
+            <strong>Safety Bollard Installation</strong> and{" "}
+            <strong>Fire Lane Compliance</strong>, we deliver high-quality
             striping solutions tailored to your specific facility needs.
           </p>
         </div>

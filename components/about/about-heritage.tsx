@@ -27,11 +27,13 @@ export default function AboutHeritage() {
 
             <div className="space-y-6 text-gray-700 text-lg leading-relaxed font-poppins">
               <p>
-                <strong>Line It Up Line Striping, LLC</strong> is a trusted
-                parking lot striping company serving Ohio, lower Michigan, and
-                eastern Indiana. We use only industry-leading{" "}
-                <strong>Sherwin-Williams</strong> line striping paint and are
-                fully insured.
+                <strong>Line It Up Line Striping, LLC</strong> is a premier{" "}
+                <strong>Surface Maintenance Contractor</strong> trusted for
+                parking lot striping across Ohio, lower Michigan, and eastern
+                Indiana. As experts in <strong>Pavement Asset Management</strong>,
+                we use only industry-leading <strong>Sherwin-Williams</strong>{" "}
+                line striping paint to ensure <strong>Asphalt Preservation</strong>
+                .
               </p>
               <p>
                 With 16 years of experience, we provide quality pavement

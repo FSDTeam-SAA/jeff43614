@@ -4,9 +4,18 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Line It Up Striping | Resources",
+  title: "Safety Resources & Paint Specs | Concrete Parking Blocks",
   description:
-    "Discover essential resources for parking lot maintenance and safety. Access Safety Data Sheets (SDS) for the premium paints we use, ensuring transparency and compliance in every project.",
+    "Access safety data sheets and technical specs for our premium Sherwin-Williams traffic marking paints and concrete parking blocks. Transparency and safety first in every project we do.",
+  openGraph: {
+    title: "Industry Resources & Safety Data Sheets | Line It Up Toledo",
+    description:
+      "Amader bebohar kora Sherwin-Williams paint-er Safety Data Sheets (SDS) ebong proyojoniyo technical resources ekhane paben. Amra proyojoniyo shokol compliance ebong safety standard mene kaj kori.",
+    url: "https://lineituptoledo.com/resources",
+  },
+  alternates: {
+    canonical: "https://lineituptoledo.com/resources",
+  },
 };
 
 export default function ResourcesPage() {

@@ -5,7 +5,12 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, PhoneCall } from "lucide-react";
 
-export default function CTASection() {
+interface CTASectionProps {
+  title?: string;
+  description?: string;
+}
+
+export default function CTASection({ title, description }: CTASectionProps) {
   return (
     <section className="relative py-12 lg:py-20 bg-primary overflow-hidden">
       {/* Background Decorative Pattern (Subtle Stripes) */}
@@ -21,13 +26,18 @@ export default function CTASection() {
           className="max-w-4xl mx-auto space-y-4"
         >
           <h2 className="headline font-black text-black uppercase italic leading-none tracking-tighter">
-            Ready to <span className="text-white">Line It Up?</span>
+            {title ? (
+              title
+            ) : (
+              <>
+                Ready to <span className="text-white">Line It Up?</span>
+              </>
+            )}
           </h2>
 
           <p className="text-black/80 text-lg md:text-xl font-poppins font-medium max-w-2xl mx-auto">
-            Whether it&apos;s a new layout or a refresh of your existing lot,
-            our experts are ready to deliver precision results. Get your free
-            estimate today.
+            {description ||
+              "Whether it's a new layout or a refresh of your existing lot, our experts are ready to deliver precision results. Get your free estimate today."}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 pt-2">

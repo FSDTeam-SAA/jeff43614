@@ -30,15 +30,17 @@ export default function HomeAboutSection() {
 
             <div className="space-y-4 md:space-y-6 text-gray-700 text-lg leading-relaxed font-poppins">
               <p>
-                <strong>Line It Up Line Striping</strong> has been servicing the
-                parking lot striping of Ohio and Michigan for over 15 years. We
-                realize you have a choice in who takes care of your parking lot
-                which is why we will not settle for nothing short of perfection.
+                <strong>Line It Up Line Striping</strong> has been delivering
+                top-tier <strong>Commercial Line Painting</strong> in Ohio and
+                Michigan for over 15 years. We realize you have a choice, which
+                is why we focus on precision{" "}
+                <strong>Traffic Flow Optimization</strong> and{" "}
+                <strong>ADA Code Compliance</strong> to ensure perfection.
               </p>
               <p>
                 We understand that your parking lot is the first impression
-                customers have, which is why we work hard to deliver a flawless
-                result.
+                customers have. Our goal is to enhance safety and aesthetics,
+                delivering a flawless result every time.
               </p>
             </div>
 

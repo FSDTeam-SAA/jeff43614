@@ -7,7 +7,7 @@ import { Building2, Trophy, Clock } from "lucide-react";
 const features = [
     {
         title: "Attention to Details",
-        description: "Meticulous attention to detail sets us apart in delivering excellence.",
+        description: "Meticulous attention to detail—from standard paint to durable Thermoplastic Markings—sets us apart in delivering excellence.",
         icon: <Building2 className="w-10 h-10" />,
     },
     {

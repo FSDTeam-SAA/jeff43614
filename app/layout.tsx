@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { Montserrat_Alternates, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/shared/navbar";
@@ -14,6 +15,12 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-poppins",
 });
+
+export const metadata: Metadata = {
+  verification: {
+    google: "a24Hb1ydlgKcqhUL4xkeLdDuEVpsAjkp1BHwZmeJGVQ",
+  },
+};
 
 export default function RootLayout({
   children,
