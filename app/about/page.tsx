@@ -7,9 +7,18 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Line It Up Striping | Home",
+  title: "About Line It Up | Parking Lot Paint Service",
   description:
-    "Professional parking lot line striping services in Ohio and Michigan. Enhance safety and aesthetics with our expert solutions.",
+    "Trusted parking lot paint and striping experts serving Ohio & Michigan for 16 years. Quality workmanship, premium materials, and impressive results. Get your free quote!",
+  openGraph: {
+    title: "About Line It Up Line Striping, LLC | 16 Years of Expertise",
+    description:
+      "Ohio ebong Michigan-er bhorsha-joggo parking lot striping service. 16 bochorer obhiggotar sathe amra Sherwin-Williams paint ebong advanced equipment bebohar kore apnar parking lot-ke kori aro nirapod ebong drishyoman.",
+    url: "https://lineituptoledo.com/about",
+  },
+  alternates: {
+    canonical: "https://lineituptoledo.com/about",
+  },
 };
 
 export default function AboutPage() {
