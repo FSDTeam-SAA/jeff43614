@@ -10,6 +10,10 @@ export interface Service {
   metaDescription?: string;
   socialTitle?: string;
   socialDescription?: string;
+  cta?: {
+    title: string;
+    description: string;
+  };
 }
 
 export const servicesData: Service[] = [
@@ -155,6 +159,10 @@ export const servicesData: Service[] = [
     socialTitle: "Professional Parking Lot Re-striping Services | Line It Up Toledo",
     socialDescription:
       "Faded parking lines ki apnar business-er prothom impression nosto korche? Amader annual re-striping service-er maddhome parking lot-ke korun porichonno ebong nirapod। Sherwin-Williams paint bebohar kore amra dicchi dirghosthayi chamak। Ohio & Michigan-e free quote-er jonno call korun।",
+    cta: {
+      title: "Restore Safety & Curb Appeal Before Winter",
+      description: "Don't let faded lines drive customers away. Schedule your parking lot refresh today with our weekend service availability.",
+    },
   },
   {
     id: 11,
@@ -169,5 +177,9 @@ export const servicesData: Service[] = [
     socialTitle: "ADA Compliant Handicap Parking Striping | Line It Up Toledo",
     socialDescription:
       " Apnar parking lot-ke ADA compliant ebong safe korun professional handicap stall striping-er maddhome। Federal ebong state code mene amra nikhut handicap markings prodan kori। Ohio, Michigan, ebong Indiana-te legal standards nishchit korte amader expert team-er sahayjo nin।",
+    cta: {
+      title: "Is Your Lot Code-Compliant?",
+      description: "Avoid fines and lawsuits by securing your accessible parking now. Book your free ADA audit and get compliant in 24 hours.",
+    },
   },
 ];

@@ -86,7 +86,10 @@ export default function ServiceDetailsClient({ service }: ServiceDetailsClientPr
                 </div>
             </section>
             {/* Call to Action */}
-            <CTASection />
+            <CTASection
+                title={service.cta?.title}
+                description={service.cta?.description}
+            />
         </main>
     );
 }
